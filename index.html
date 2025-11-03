@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SmartShop - Simplified Reviews</title>
+  <title>SmartShop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Simple Reviews Carousel */
@@ -99,7 +99,7 @@
       <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </section>
 
-    <!-- ✅ SIMPLE CUSTOMER REVIEWS (Perfect Section) -->
+    <!--  customer reviewes-->
     <section id="reviews" class="bg-white rounded shadow p-4">
       <h2 class="text-lg font-semibold mb-3 text-center">Customer Reviews</h2>
       <div class="carousel">
@@ -191,12 +191,6 @@
     const backTop = document.getElementById('backTop');
 
     // Navbar highlight
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('bg-gray-100','font-semibold'));
-        link.classList.add('bg-gray-100','font-semibold');
-      });
-    });
 
     function updateBalanceDisplay() {
       balanceDisplay.textContent = balance + ' BDT';
